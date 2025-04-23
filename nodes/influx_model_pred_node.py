@@ -1,7 +1,7 @@
 import comfy.sd
 import comfy.model_sampling
 import comfy.latent_formats
-import nodes
+from comfy.nodes import base_nodes as nodes
 
 
 class InverseCONST:

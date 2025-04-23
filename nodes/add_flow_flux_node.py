@@ -1,7 +1,6 @@
 import comfy.sd
 import comfy.model_sampling
 import comfy.latent_formats
-import nodes
 
 
 class AddFluxFlowNode:

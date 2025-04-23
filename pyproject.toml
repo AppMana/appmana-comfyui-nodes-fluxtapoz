@@ -2,8 +2,11 @@
 name = "comfyui-fluxtapoz"
 description = "ComfyUI nodes for image editing with Flux, such as RF-Inversion and more"
 version = "1.0.0"
-license = {file = "LICENSE"}
-dependencies = ["einshape"]
+license = { file = "LICENSE" }
+dependencies = [
+  "einshape",
+  "comfyui",
+]
 
 [project.urls]
 Repository = "https://github.com/logtd/ComfyUI-Fluxtapoz"
@@ -13,3 +16,15 @@ Repository = "https://github.com/logtd/ComfyUI-Fluxtapoz"
 PublisherId = "logtd"
 DisplayName = "ComfyUI-Fluxtapoz"
 Icon = ""
+
+[tool.setuptools]
+packages = ["comfyui_fluxtapoz"]
+
+[tool.setuptools.package-dir]
+"comfyui_fluxtapoz" = "."
+"comfyui_fluxtapoz.nodes" = "nodes"
+"comfyui_fluxtapoz.flux" = "flux"
+"comfyui_fluxtapoz.utils" = "utils"
+
+[project.entry-points."comfyui.custom_nodes"]
+comfyui_fluxtapoz = "comfyui_fluxtapoz"
